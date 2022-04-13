@@ -1,0 +1,99 @@
+{
+  "itemName" : "ak47",
+  "price" : 2000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The AK-47, AK, also known as the Kalashnikov, is a gas-operated, 7.62×39mm assault rifle.",
+  "shortdescription" : "AK-47",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 6,
+
+  "inventoryIcon" : "ak47.png",  
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "ak47.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middle" : {
+          "properties" : {
+            "image" : "ak47.png",
+            "transformationGroups" : ["weapon"]
+           }      
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : ["ak47.ogg"]
+    }
+  },
+  
+  
+
+  "baseOffset" : [1.4, -0.3],
+  "muzzleOffset" : [4, 0.36],
+
+  "scripts" : ["ak47.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.28,
+    "baseDps" : 10,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.023,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "knockback" : 15,
+      "piercing" : true
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "apirounds",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

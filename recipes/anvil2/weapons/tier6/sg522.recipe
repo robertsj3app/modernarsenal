@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 15 },
+    { "item" : "copperbar", "count" : 2 },
+    { "item" : "plastic", "count" : 20 }
+  ],
+  "output" : { "item" : "sg522", "count" : 1 },
+  "groups" : [ "craftinganvil2", "weapons", "all" ]
+}

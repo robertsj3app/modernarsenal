@@ -1,0 +1,4 @@
+[
+  { "op" : "add", "path" : "/preciseshot", "value" : "/items/active/weapons/ranged/abilities/preciseshot/preciseshot.weaponability" },
+  { "op" : "add", "path" : "/410", "value" : "/items/active/weapons/ranged/abilities/410/410.weaponability" }
+]

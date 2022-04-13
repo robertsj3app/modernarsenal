@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 15 },
+    { "item" : "copperbar", "count" : 4 },
+    { "item" : "tanplastic", "count" : 17 },
+    { "item" : "refinedaegisalt", "count" : 4 },
+    { "item" : "refinedferozium", "count" : 4 },
+    { "item" : "refinedviolium", "count" : 4 }
+  ],
+  "output" : { "item" : "scarh", "count" : 1 },
+  "groups" : [ "craftinganvil3", "weapons", "all" ]
+}

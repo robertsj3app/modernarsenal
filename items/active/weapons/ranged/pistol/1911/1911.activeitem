@@ -1,0 +1,96 @@
+{
+  "itemName" : "1911",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The M1911 is a single-action, semi-automatic, magazine-fed, recoil-operated pistol chambered for the .45 ACP cartridge.",
+  "shortdescription" : "M1911",
+  "tooltipKind" : "gun",
+  "category" : "pistol",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 6,
+
+  "inventoryIcon" : "1911.png",  
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "1911.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middle" : {
+          "properties" : {
+            "image" : "1911.png",
+            "transformationGroups" : ["weapon"]
+           }      
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : ["1911.wav"]
+    }
+  },
+  
+  
+
+  "baseOffset" : [0.47, 0.12],
+  "muzzleOffset" : [1.2, 0.5],
+
+  "scripts" : ["1911.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 4,
+    "energyUsage" : 25,
+    "inaccuracy" : 0.04,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "huntingbullet",
+    "projectileParameters" : {
+      "knockback" : 13
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

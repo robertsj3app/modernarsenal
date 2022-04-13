@@ -1,0 +1,11 @@
+{
+  "itemName" : "tanplastic",
+  "price" : 3,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "tanplastic.png",
+  "description" : "A piece of colored plastic for building 19th-21st century firearms.",
+  "shortdescription" : "Tan Plastic",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : ["scarh", "m82a1"]
+}

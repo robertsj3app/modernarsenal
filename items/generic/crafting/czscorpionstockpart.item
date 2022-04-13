@@ -1,0 +1,11 @@
+{
+  "itemName" : "czscorpionstockpart",
+  "price" : 700,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "czscorpionstockpart.png",
+  "description" : "A stock and grenade launcher used to convert the CZ Scorpion Evo 3 into a two handed weapon.",
+  "shortdescription" : "CZ Scorpion Parts Kit",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : ["czscorpionstock"]
+}

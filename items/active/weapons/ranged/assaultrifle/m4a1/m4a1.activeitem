@@ -1,0 +1,98 @@
+{
+  "itemName" : "m4a1",
+  "price" : 2000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "The M4A1 is a 5.56×45mm NATO, air-cooled, direct impingement, magazine-fed carbine.",
+  "shortdescription" : "M4A1 Carbine",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","assaultrifle"],
+  "level" : 7,
+
+  "inventoryIcon" : "m4a1.png",  
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "m4a1.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middle" : {
+          "properties" : {
+            "image" : "m4a1.png",
+            "transformationGroups" : ["weapon"]
+           }      
+        }
+      }
+    },
+    "sounds" : {
+      "fire" : ["m4a1.ogg"]
+    }
+  },
+  
+  
+
+  "baseOffset" : [1.4, 0.15],
+  "muzzleOffset" : [4, 0.5],
+
+  "scripts" : ["m4a1.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.0625,
+    "baseDps" : 16.5,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.0185,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "knockback" : 3
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "flashlight",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

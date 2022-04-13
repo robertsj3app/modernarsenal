@@ -1,0 +1,11 @@
+{
+  "itemName" : "plastic",
+  "price" : 3,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "plastic.png",
+  "description" : "A piece of refined plastic for building 19th-21st century firearms.",
+  "shortdescription" : "Plastic",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : ["sg522", "m4a1", "m249", "m9", "deagle", "czscorpionnostock", "czscorpionstockpart"]
+}

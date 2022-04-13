@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "liquidoil", "count" : 1 },
+    { "item" : "logblock", "count" : 1 },
+    { "item" : "petalred", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "processedwood",
+    "count" : 1
+  },
+  "groups" : [ "craftingfurnace", "ingredients", "all" ]
+}

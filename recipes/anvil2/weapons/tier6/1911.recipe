@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 12 },
+    { "item" : "copperbar", "count" : 4 },
+    { "item" : "processedwood", "count" : 6 }
+  ],
+  "output" : { "item" : "1911", "count" : 1 },
+  "groups" : [ "craftinganvil2", "weapons", "all" ]
+}

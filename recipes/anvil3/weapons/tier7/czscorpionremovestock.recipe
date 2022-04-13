@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "czscorpionstock", "count" : 1 }
+  ],
+  "output" : [
+    { "item" : "czscorpionnostock", "count" : 1 },
+    { "item" : "czscorpionstockpart", "count" : 1 }
+  ],
+  "groups" : [ "craftinganvil3", "weapons", "all" ]
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "processedwood",
+  "price" : 3,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "processedwood.png",
+  "description" : "A piece of processed wood for building 19th-21st century firearms.",
+  "shortdescription" : "Processed Wood",
+  "itemTags" : [ "reagent" ],
+  "learnBlueprintsOnPickup" : ["m1911", "ak47"]
+}
